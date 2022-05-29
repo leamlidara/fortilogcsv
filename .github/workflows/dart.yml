@@ -17,14 +17,10 @@ jobs:
 
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macOS-latest]
+        os: [ubuntu-latest]
         include:
           - os: ubuntu-latest
             output-name: fortilogcsv-linux
-          - os: macOS-latest
-            output-name: fortilogcsv-mac
-          - os: windows-latest
-            output-name: fortilogcsv-windows.exe
 
     steps:
       - uses: actions/checkout@v3
